@@ -1,3 +1,5 @@
+<!-- https://www.atlassian.com/es/git/tutorials/using-branches/git-checkout -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,6 +13,7 @@
 <body style="background-color: #ddd;">
     <!-- Header -->
     <header class="header">
+        https://images.pexels.com/photos/8295800/pexels-photo-8295800.jpeg?auto=compress&cs=tinysrgb&w=1600
         <h1 class="tittle text-center fs-1">Pagina WEB</h1>
     </header>
     <!-- NavBar -->
@@ -33,50 +36,76 @@
     <!-- Main -->
     <main class="container-fluid">
         <!-- Slide Photos -->
-        <div class="row justify-content-center mt-5">
-            <div id="carousel" class="carousel slide bg-dark carousel-fade" data-bs-ride="carousel"  style="width: 60vw; height: 40vw;">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="https://images.pexels.com/photos/2664216/pexels-photo-2664216.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="d-block w-100 mt-3" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Etiqueta de la primera diapositiva</h5>
-                        <p>Algún contenido placeholder representativo para la primera diapositiva.</p>
+        <div class="row justify-content-center mt-3">
+            <div class="container col-10">
+                <div id="carousel" class="carousel slide bg-dark carousel-dark carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
                     </div>
-                </div>
-                <div class="carousel-item">
-                    <img src="https://images.pexels.com/photos/3756523/pexels-photo-3756523.jpeg?auto=compress&cs=tinysrgb&w=1600" class="d-block w-100 mt-3" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Etiqueta de la segunda diapositiva</h5>
-                        <p>Algún contenido placeholder representativo para la segunda diapositiva.</p>
+                    <div class="carousel-inner">
+                        <!-- Todas las imagenes deben tener el mismo tamaño -->
+                        <div class="carousel-item active">
+                            <img src="https://images.pexels.com/photos/2664216/pexels-photo-2664216.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="d-block mt-3 w-100 p-2" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Etiqueta de la primera diapositiva</h5>
+                                <p>Algún contenido placeholder representativo para la primera diapositiva.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://images.pexels.com/photos/3756523/pexels-photo-3756523.jpeg?auto=compress&cs=tinysrgb&w=1600" class="d-block w-100 mt-3 p-2" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Etiqueta de la segunda diapositiva</h5>
+                                <p>Algún contenido placeholder representativo para la segunda diapositiva.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://images.pexels.com/photos/1256875/pexels-photo-1256875.jpeg?auto=compress&cs=tinysrgb&w=1600" class="d-block w-100 mt-3 p-2" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Etiqueta de la tercera diapositiva</h5>
+                                <p>Algún contenido placeholder representativo para la tercera diapositiva.</p>
+                            </div>
+                        </div>
                     </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Anterior</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Siguiente</span>
+                    </button>
                 </div>
-                <div class="carousel-item">
-                    <img src="https://images.pexels.com/photos/1256875/pexels-photo-1256875.jpeg?auto=compress&cs=tinysrgb&w=1600" class="d-block w-100 mt-3" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5>Etiqueta de la tercera diapositiva</h5>
-                        <p>Algún contenido placeholder representativo para la tercera diapositiva.</p>
-                    </div>
-                </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Anterior</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Siguiente</span>
-                </button>
             </div>
         </div>
         <!-- Menu Principal -->
         <div class="row text-center justify-content-center">
             <h2 class="subtittle">
-                Menu
+                Menu<br>
+                fotos<br>Menu<br>
+                fotos<br>Menu<br>
+                fotos<br>Menu<br>
+                fotos<br>Menu<br>
+                fotos<br>Menu<br>
+                fotos<br>Menu<br>
+                fotos<br>Menu<br>
+                fotos<br>Menu<br>
+                fotos<br>Menu<br>
+                fotos<br>Menu<br>
+                fotos<br>Menu<br>
+                fotos<br>Menu<br>
+                fotos<br>Menu<br>
+                fotos<br>Menu<br>
+                fotos<br>Menu<br>
+                fotos<br>Menu<br>
+                fotos<br>Menu<br>
+                fotos<br>Menu<br>
+                fotos<br>Menu<br>
+                fotos<br>Menu<br>
+                fotos<br>Menu<br>
+                fotos<br>Menu<br>
+                fotos<br>
             </h2>
         </div>
     </main>
