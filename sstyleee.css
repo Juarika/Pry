@@ -1,3 +1,11 @@
 .carousel-item > img{
     max-height: 700px !important;
+}   
+
+.font-color {
+    color: #3E7A48 !important;
+}
+
+nav, header {
+    background-color: #bbb !important;
 }
